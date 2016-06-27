@@ -1,0 +1,4 @@
+.idea
+*.png
+node_modules
+testReporter
