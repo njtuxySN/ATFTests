@@ -4,6 +4,8 @@
 const SINGLE_INSTANCE_URL = 'http://localhost:8080';
 // const SINGLE_INSTANCE_URL = 'https://demonightlyteamdev.service-now.com';
 
+//Add a new line to test github
+
 /**
  * Test Report using protractor-jasmine2-screenshot-reporter
 */
