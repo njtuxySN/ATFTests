@@ -1,7 +1,7 @@
 /**
  * Created by yan.xia on 5/25/16.
  */
-const SINGLE_INSTANCE_URL = 'http://localhost:8080';
+const SINGLE_INSTANCE_URL = 'http://10.11.83.238:16001';
 // const SINGLE_INSTANCE_URL = 'https://demonightlyteamdev.service-now.com';
 
 /**

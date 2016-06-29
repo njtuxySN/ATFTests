@@ -34,11 +34,20 @@ describe('test list Sanity Check', function() {
     });
 
 
+    it('add field validation step', function () {
+        testHelper.createAFieldValidationStep();
+        testHelper.unlockMandatoryValidation();
+        testHelper.selectFieldToValidateMandatory("Model category (+)");
+        testHelper.selectFieldToValidateMandatory("Model (+)");
 
+    });
+
+    /*
     // for(var i=0; i< 20; i++){
         it('add open form step', function () {
             testHelper.createAOpenFormStep("[alm_hardware]");
         });
+
 
         it('add set field value step', function () {
             testHelper.createASetFieldValuesStep();
@@ -60,10 +69,14 @@ describe('test list Sanity Check', function() {
             }
         });
 
+
         it('add submit step', function () {
             testHelper.createASubmitFormStep();
             testHelper.submitTheStep();
-        })
+        });
+
+        */
+
     // }
 
 });

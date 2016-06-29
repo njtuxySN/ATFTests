@@ -26,6 +26,7 @@ var testDetailsPage = AutomatedTestingFrameworkHelpers.sys_atf_test_page;
 var openFormStepPage = AutomatedTestingFrameworkHelpers.open_form_step_page;
 var setFieldValueStepPage = AutomatedTestingFrameworkHelpers.set_field_values_step_page;
 var assertValueStepPage = AutomatedTestingFrameworkHelpers.assert_value_step_page;
+var fieldValidationStepPage = AutomatedTestingFrameworkHelpers.field_validation_step_page;
 
 
 var TestHelper = function () {
@@ -58,6 +59,10 @@ var TestHelper = function () {
         testDetailsPage.createASubmitFormStep();
     };
 
+    this.createAFieldValidationStep = function () {
+        testDetailsPage.createAFieldValidationStep();
+    };
+
     this.setFieldValueForRow = function (row_index, field_type, field_name, field_value) {
         setFieldValueStepPage.setFieldValueForRow(row_index, field_type, field_name, field_value);
     };
@@ -77,6 +82,14 @@ var TestHelper = function () {
 
     this.submitTheStep = function () {
         setFieldValueStepPage.submitTheStep();
+    };
+
+    this.unlockMandatoryValidation = function () {
+        fieldValidationStepPage.unlockMandatoryValidation();
+    }
+
+    this.selectFieldToValidateMandatory = function (field_name) {
+        fieldValidationStepPage.selectFieldToValidateMandatory(field_name);
     }
 
 

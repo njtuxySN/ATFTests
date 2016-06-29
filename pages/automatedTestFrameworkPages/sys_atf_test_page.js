@@ -27,12 +27,20 @@ var SysAtfTestPage = function () {
         browser.switchTo().frame('dialog_frame');
     };
 
+    this.createAFieldValidationStep = function () {
+        this.createNewTestStep();
+        this.getButtonAndClick(3);
+        browser.sleep(SLEEP);
+        browser.switchTo().frame('dialog_frame');
+    };
+    
     this.createASubmitFormStep = function () {
         this.createNewTestStep();
         this.getButtonAndClick(4);
         browser.sleep(SLEEP);
         browser.switchTo().frame('dialog_frame');
     };
+
 
 
     this.createNewTestStep = function () {
