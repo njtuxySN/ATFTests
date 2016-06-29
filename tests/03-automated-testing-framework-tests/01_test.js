@@ -39,7 +39,6 @@ describe('test list Sanity Check', function() {
         testHelper.unlockMandatoryValidation();
         testHelper.selectFieldToValidateMandatory("Model category (+)");
         testHelper.selectFieldToValidateMandatory("Model (+)");
-
     });
 
     /*

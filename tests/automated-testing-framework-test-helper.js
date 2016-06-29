@@ -86,11 +86,19 @@ var TestHelper = function () {
 
     this.unlockMandatoryValidation = function () {
         fieldValidationStepPage.unlockMandatoryValidation();
+    };
+
+    this.unlockIsNotMandatoryValidation = function () {
+        fieldValidationStepPage.unlockIsNotMandatoryValidation();
     }
 
     this.selectFieldToValidateMandatory = function (field_name) {
         fieldValidationStepPage.selectFieldToValidateMandatory(field_name);
-    }
+    };
+
+    this.selectFieldToValidateIsNotMandatory = function (field_name) {
+        fieldValidationStepPage.selectFieldToValidateIsNotMandatory(field_name);
+    };
 
 
 

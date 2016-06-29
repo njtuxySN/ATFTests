@@ -9,7 +9,7 @@ const SINGLE_INSTANCE_URL = 'http://10.11.83.238:16001';
 */
 var HtmlScreenshotReporter = require('protractor-jasmine2-screenshot-reporter');
 var reporter = new HtmlScreenshotReporter({
-    dest: '/Users/yan.xia/WebstormProjects/angularTests/testReporter',
+    dest: '/Users/yan.xia/WebstormProjects/AFTTests/testReporter',
     filename: 'my-report.html',
     reportTitle: SINGLE_INSTANCE_URL
 });
