@@ -90,7 +90,7 @@ var TestHelper = function () {
 
     this.unlockIsNotMandatoryValidation = function () {
         fieldValidationStepPage.unlockIsNotMandatoryValidation();
-    }
+    };
 
     this.selectFieldToValidateMandatory = function (field_name) {
         fieldValidationStepPage.selectFieldToValidateMandatory(field_name);
@@ -99,9 +99,14 @@ var TestHelper = function () {
     this.selectFieldToValidateIsNotMandatory = function (field_name) {
         fieldValidationStepPage.selectFieldToValidateIsNotMandatory(field_name);
     };
-
-
-
+    
+    this.unlockReadonlyValidation = function () {
+        fieldValidationStepPage.unlockReadonlyValidation();
+    };
+    
+    this.selectFieldToValidateReadOnly = function (field_name) {
+        fieldValidationStepPage.selectFieldToValidateReadOnly(field_name);
+    }
 };
 
 module.exports = TestHelper;
